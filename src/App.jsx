@@ -76,7 +76,11 @@ export default function CafeHunterApp() {
     setCafes([]);
 
     try {
-      const geoRes = await fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(query)}`);
+      // API Vercel Fix: Added an email parameter and Accept headers
+      const geoRes = await fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(query)}&email=vibe-coder@cafehunter.local`, {
+        headers: { 'Accept': 'application/json' }
+      });
+      
       if (!geoRes.ok) throw new Error("Map API is resting. Give it a sec.");
       const geoData = await geoRes.json();
       
@@ -92,9 +96,13 @@ export default function CafeHunterApp() {
         out center 25;
       `;
       
+      // API Vercel Fix: Explicit Accept headers for the Overpass API
       const cafeRes = await fetch(`https://overpass-api.de/api/interpreter`, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        headers: { 
+          'Content-Type': 'application/x-www-form-urlencoded',
+          'Accept': 'application/json' 
+        },
         body: `data=${encodeURIComponent(overpassQuery)}`
       });
 
