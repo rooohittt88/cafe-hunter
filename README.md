@@ -1,4 +1,4 @@
-# ☕ Cafe Hunter
+# Cafe Hunter
 
 ## Overview
 Cafe Hunter is a web application designed to help users discover, rate, and share their favorite local cafes. Whether you are looking for the perfect cold brew, a quiet study spot, or the best aesthetic for your next session, Cafe Hunter tracks down the ideal vibe.
@@ -10,7 +10,7 @@ Cafe Hunter is a web application designed to help users discover, rate, and shar
 *   **Curated Lists:** Save your favorite spots to personalized user dashboards.
 
 ## Tech Stack
-*(Update these based on your specific implementation)*
+
 *   **Frontend:** HTML, CSS, JavaScript, React
 *   **Backend:** Node.js / Python / Django
 *   **Database:** (e.g., PostgreSQL, MongoDB)
