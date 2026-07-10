@@ -11,10 +11,7 @@ Cafe Hunter is a web application designed to help users discover, rate, and shar
 
 ## Tech Stack
 
-*   **Frontend:** HTML, CSS, JavaScript, React
-*   **Backend:** Node.js / Python / Django
-*   **Database:** (e.g., PostgreSQL, MongoDB)
-
+*    HTML, CSS, JavaScript, React
 ## Installation
 
 1.  **Clone the repository:**
@@ -39,8 +36,17 @@ Cafe Hunter is a web application designed to help users discover, rate, and shar
 
 3.  **Set up environment variables:**
     Create a `.env` file in the root directory and add your necessary keys (e.g., Database URI, Map API keys).
+    
+4.  **Configure the API Key (Required):**
+    This project requires an API key to fetch cafe data. 
+    * Create a `.env` file in the root directory.
+    * Add your API key using the following format:
+      ```env
+      API_KEY=your_api_key_here
+      ```
+    * **Security Note:** Make sure your `.env` file is included in your `.gitignore` so your API key is not publicly exposed on GitHub.
 
-4.  **Run the application:**
+5.  **Run the application:**
     ```bash
     # Start frontend
     npm start
