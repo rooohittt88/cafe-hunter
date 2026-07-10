@@ -1,16 +1,56 @@
-# React + Vite
+# ☕ Cafe Hunter
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
+Cafe Hunter is a web application designed to help users discover, rate, and share their favorite local cafes. Whether you are looking for the perfect cold brew, a quiet study spot, or the best aesthetic for your next session, Cafe Hunter tracks down the ideal vibe.
 
-Currently, two official plugins are available:
+## Features
+*   **Search & Filter:** Find cafes by location, rating, and specific amenities (e.g., Wi-Fi, power outlets).
+*   **Interactive Maps:** View and locate cafes on an integrated map interface.
+*   **User Reviews:** Share your experiences, drop ratings, and upload photos of your cafe visits.
+*   **Curated Lists:** Save your favorite spots to personalized user dashboards.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tech Stack
+*(Update these based on your specific implementation)*
+*   **Frontend:** HTML, CSS, JavaScript, React
+*   **Backend:** Node.js / Python / Django
+*   **Database:** (e.g., PostgreSQL, MongoDB)
 
-## React Compiler
+## Installation
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/yourusername/cafe-hunter.git](https://github.com/yourusername/cafe-hunter.git)
+    cd cafe-hunter
+    ```
 
-## Expanding the ESLint configuration
+2.  **Install dependencies:**
+    ```bash
+    # For frontend
+    cd client
+    npm install
+    
+    # For backend (Node.js example)
+    cd ../server
+    npm install
+    
+    # OR for backend (Python/Django example)
+    pip install -r requirements.txt
+    ```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+3.  **Set up environment variables:**
+    Create a `.env` file in the root directory and add your necessary keys (e.g., Database URI, Map API keys).
+
+4.  **Run the application:**
+    ```bash
+    # Start frontend
+    npm start
+    
+    # Start backend
+    npm run dev # or python manage.py runserver
+    ```
+
+## Contributing
+Contributions, issues, and feature requests are welcome! Feel free to check the issues page if you want to contribute to the codebase.
+
+## Contact
+**Rohit** - b24bs2288@iitj.ac.in
